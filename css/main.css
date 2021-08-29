@@ -1,0 +1,154 @@
+@import 'header.css';
+@import 'about-us.css';
+@import 'choose.css';
+@import 'team.css';
+@import 'contacts.css';
+@import 'footer.css';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	background: #282931;
+}
+
+a {
+	text-decoration: none;
+	font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+	color: inherit;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+	color: inherit;
+}
+
+textarea {
+	resize: none;
+}
+
+.wrapper {
+	max-width: 100%;
+	padding: 0 70px;
+}
+
+.title {
+	margin-top: 64px;
+}
+
+.title h2 {
+	font-weight: bold;
+	font-size: 64px;
+	line-height: 96px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.title-sm {
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 54px;
+	color: #FFFFFF;
+	margin-bottom: 16px;
+}
+
+.text {
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 36px;
+	color: #FFFFFF;
+}
+
+@media (max-width: 1200px) {
+	.wrapper {
+		padding: 0 40px;
+	}
+	.title {
+		margin-top: 40px;
+	}
+
+	.title h2 {
+		font-size: 40px;
+		line-height: 68px;
+	}
+
+	.title-sm {
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+	.text {
+		font-size: 18px;
+		line-height: 26px;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.wrapper {
+		padding: 0 30px;
+	}
+
+	.title {
+		margin-top: 30px;
+	}
+
+	.title h2 {
+		font-size: 30px;
+		line-height: 42px;
+	}
+
+	.title-sm {
+		font-size: 24px;
+		line-height: 36px;
+	}
+
+	.text {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+}
+
+@media (max-width: 576px) {
+
+	.wrapper {
+		padding: 0 20px;
+	}
+
+
+	.title {
+		margin-top: 30px;
+	}
+
+	.title h2 {
+		font-size: 22px;
+		line-height: 36px;
+	}
+
+	.title-sm {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.text {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+}
