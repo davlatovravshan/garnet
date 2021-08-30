@@ -1,4 +1,33 @@
 #about-us {
+	position: relative;
+	min-height: 740px;
+	overflow: hidden;
+}
+
+#about-us:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	background: rgba(40, 41, 49, 0.4);
+}
+
+.about-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.about-us {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 4;
 	padding: 64px 0;
 }
 
@@ -14,7 +43,16 @@
 
 @media (max-width: 1200px) {
 	#about-us {
+		min-height: 600px;
+	}
+	.about-us {
 		padding: 40px 0;
+	}
+
+	.about-video {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
 	}
 
 	.about-us__title {
@@ -27,10 +65,11 @@
 	.content__text {
 		max-width: 80%;
 	}
+
 }
 
 @media (max-width: 768px) {
-	#about-us {
+	.about-us {
 		padding: 30px 0;
 	}
 

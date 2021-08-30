@@ -1,5 +1,9 @@
 .main_header {
 	min-height: 100vh;
+	background: url('../img/bg.svg');
+	background-repeat: no-repeat;
+	background-size:  auto;
+	background-position: center center;
 }
 .header {
 	padding: 58px 0;
@@ -116,7 +120,9 @@
 
 
 @media (max-width: 1500px) {
-
+	.main_header {
+		background-size: cover;
+	}
 	.header {
 		padding: 40px 0;
 	}
