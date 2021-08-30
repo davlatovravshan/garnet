@@ -39,20 +39,20 @@
 }
 
 
-.services {
+.footer-services {
 	max-width: 300px;
 }	
-.services__list {
+.footer-services__list {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
 }
-.services__item {
+.footer-services__item {
 	flex-basis: calc(100% / 2);
 }
-.services__link {
+.footer-services__link {
 	display: flex;
 	align-items: center;
 	font-weight: 400;
@@ -61,7 +61,7 @@
 	color: #FFFFFF;
 	margin-bottom: 16px;
 }
-.services__link span {
+.footer-services__link span {
 	margin-right: 8px;
 	font-size: 30px;
 }
