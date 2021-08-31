@@ -2,7 +2,11 @@
 	min-height: 100vh;
 	background: url('../img/bg.svg');
 	background-repeat: no-repeat;
+<<<<<<< HEAD
 	background-size:  auto;
+=======
+	background-size:  cover;
+>>>>>>> c6e3c7e8180a4aecb5a995cc9378e4c8529fbbd0
 	background-position: center center;
 }
 .header {
@@ -36,6 +40,11 @@
 	line-height: 27px;
 	color: #FFFFFF;
 	opacity: 0.65;
+	transition: all 0.3s ease;
+}
+.nav__link:hover {
+	opacity: 1;
+	transition: all 0.3s ease;
 }
 .nav__item:first-child {
 	margin-left: 0;
@@ -43,7 +52,6 @@
 .nav__link.active {
 	opacity: 1;
 }
-
 
 .nav-sm {
 	height: 0;

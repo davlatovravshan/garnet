@@ -1,5 +1,6 @@
 @import 'header.css';
 @import 'about-us.css';
+@import 'services.css';
 @import 'choose.css';
 @import 'team.css';
 @import 'contacts.css';
@@ -47,10 +48,6 @@ textarea {
 	padding: 0 70px;
 }
 
-.title {
-	margin-top: 64px;
-}
-
 .title h2 {
 	font-weight: bold;
 	font-size: 64px;
@@ -74,12 +71,28 @@ textarea {
 	color: #FFFFFF;
 }
 
+.section {
+	padding: 64px 0;
+}
+
+
+@media (max-width: 1500px) {
+
+	.title h2 {
+		font-size: 36px;
+		line-height: 48px;
+	}
+
+	.text {
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+}
+
 @media (max-width: 1200px) {
 	.wrapper {
 		padding: 0 40px;
-	}
-	.title {
-		margin-top: 40px;
 	}
 
 	.title h2 {
@@ -93,19 +106,19 @@ textarea {
 	}
 
 	.text {
-		font-size: 18px;
+		font-size: 20px;
 		line-height: 26px;
 	}
 }
 
 @media (max-width: 768px) {
 
-	.wrapper {
-		padding: 0 30px;
+	.section {
+		padding: 40px 0;
 	}
 
-	.title {
-		margin-top: 30px;
+	.wrapper {
+		padding: 0 30px;
 	}
 
 	.title h2 {
@@ -129,11 +142,6 @@ textarea {
 
 	.wrapper {
 		padding: 0 20px;
-	}
-
-
-	.title {
-		margin-top: 30px;
 	}
 
 	.title h2 {
