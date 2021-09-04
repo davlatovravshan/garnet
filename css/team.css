@@ -17,18 +17,20 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 50%;
-	height: calc(100vw / 2);
+	width: calc(100vw / 2);
+	height: 100%;
 	object-fit: cover;
-	object-position: 50% 100%;
-	transform: rotate(-90deg);
 }
 
 .team-video-2 {
-	left: auto;
+	top: 0;
 	right: 0;
-	transform: rotate(90deg);
-	object-position: 70% 100%;
+	left: auto;
+	transform: scaleX(-1);
+}
+
+.video-2 {
+	transform: scaleX(-1);
 }
 
 .team__content {
@@ -119,5 +121,7 @@
 	.slider-card {
 		flex-basis: 100%;
 	}
-
+	#team {
+		min-height: 1100px;
+	}
 }
