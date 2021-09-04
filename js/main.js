@@ -18,20 +18,42 @@ form.addEventListener('submit', function(event) {
 serviceItemsTitle.forEach(function(serviceItemTitle) {
 
 	serviceItemTitle.addEventListener('click', function() {
-
 		const parent = serviceItemTitle.parentElement
-
-		let activeItem = null
-		serviceItems.forEach(function(item) {
-			if (item !== parent && item.classList.contains('active')) {
-				activeItem = item
-			}
-		})
-
-		parent.classList.add('active')
-		if (activeItem) {
-			activeItem.classList.remove('active')
-		}
+		openServiceTab(parent)
 	})
 
 })
+
+function openServiceTab(openElem) {
+	let activeItem = null
+	serviceItems.forEach(function(item) {
+		if (item !== parent && item.classList.contains('active')) {
+			activeItem = item
+		}
+	})
+
+	openElem.classList.add('active')
+	if (activeItem) {
+		activeItem.classList.remove('active')
+	}
+}
+
+function getServiceByOrder(order) {
+	let length = serviceItems?.length || 0
+	return serviceItems?.[length - order]
+}
+
+function viewAndOpenTab(order) {
+
+	const block = document.querySelector('#services');
+
+	block.scrollIntoView({
+		block: 'center',
+		behavior: 'smooth'
+	})
+
+	const elem = getServiceByOrder(order)
+	if (elem && !elem.classList.contains('active')) {
+		openServiceTab(elem)
+	}
+}

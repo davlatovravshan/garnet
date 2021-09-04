@@ -22,13 +22,17 @@
     cursor: pointer;
     display: flex;
     justify-content: center;
-    padding: 90px 24px;
+    padding: 24px;
 }
 .service-item__title h4 {
     font-weight: bold;
     font-size: 36px;
     line-height: 54px;
     text-align: center;
+
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 
     color: #FFFFFF;
     writing-mode: vertical-lr;
@@ -155,6 +159,7 @@
     .service-item {
         padding: 30px 10px 30px 0;
         margin-bottom: 20px;
+        max-height: 100%;
     }
     .service-item:first-child {
         margin-bottom: 0;

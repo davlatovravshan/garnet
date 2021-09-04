@@ -53,6 +53,7 @@
 	flex-basis: calc(100% / 2);
 }
 .footer-services__link {
+	cursor: pointer;
 	display: flex;
 	align-items: center;
 	font-weight: 400;
