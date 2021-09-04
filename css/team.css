@@ -61,6 +61,9 @@
 	line-height: 27px;
 	color: #FFFFFF;
 }
+.linkedin-icon {
+	margin-top: 8px;
+}
 
 
 @media (max-width: 1500px) {
