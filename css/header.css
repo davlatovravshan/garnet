@@ -190,6 +190,10 @@
 		padding: 30px 0;
 	}
 
+	.logo img {
+		width: 80px;
+	}
+
 	.banner__title {
 		font-size: 40px;
 		line-height: 80px;
@@ -211,6 +215,10 @@
 	.logo h3 {
 		font-size: 18px;
 		line-height: 24px;
+	}
+
+	.logo img {
+		width: 60px;
 	}
 
 	.banner__title {
